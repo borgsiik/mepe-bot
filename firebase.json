@@ -1,0 +1,13 @@
+{
+  "apphosting": {
+    "backendId": "mepe-bot-back",
+    "rootDir": ".",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
+  }
+}

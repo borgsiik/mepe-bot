@@ -1,0 +1,32 @@
+{
+  "name": "mepe-bot",
+  "version": "1.0.0",
+  "description": "Maritime SAR supply reporting bot with Telegram + Firestore + QR web flow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js",
+    "test": "node --test",
+    "deploy:apphosting": "firebase deploy --only apphosting",
+    "logs:apphosting": "firebase apphosting:backends:get mepe-bot-back"
+  },
+  "keywords": [
+    "telegram",
+    "firebase",
+    "firestore",
+    "qr",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "firebase": "^12.12.0",
+    "firebase-admin": "^12.7.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "qrcode": "^1.5.4"
+  }
+}
